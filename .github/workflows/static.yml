@@ -37,6 +37,8 @@ jobs:
           id: deployment
           uses: actions/deploy-pages@v1
   job2:
+      environment:
+        name: python
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
