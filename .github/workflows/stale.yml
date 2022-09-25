@@ -4,8 +4,10 @@
 # For more information, see:
 # https://github.com/actions/stale
 name: Mark stale issues and pull requests
-
 on:
+  push:
+    branches: ["master"]
+    
   schedule:
   - cron: '17 7 * * *'
 
